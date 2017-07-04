@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- head -->
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="How to use responsive options">
+    <meta name="author" content="David Deutsch">
+    <title>
+        Main Slider
+    </title>
+
+    <!-- Stylesheets -->
+    <link rel="icon" href="mainPlanter/000.jpg">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css ">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic" rel="stylesheet" type="text/css">
+    <!--<link rel="stylesheet" href="mainPlanter/assets/css/docs.theme.min.css">-->
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="mainPlanter/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="mainPlanter/assets/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="mainPlanter/css/style.css">
+    <link rel="stylesheet" href="owlTypePlanter/css/style.css">
+    <link rel="stylesheet" href="planterCards/css/style.css">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+
+    <!-- Yeah i know js should not be in header. Its required for demos.-->
+
+    <!-- javascript -->
+    <script src="mainPlanter/assets/vendors/jquery.min.js"></script>
+    <script src="mainPlanter/assets/owlcarousel/owl.carousel.js"></script>
+</head>
+
+<body>
+
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@      NAVBAR Start      @@@@@@@@@@@@@@@@@@@@@@-->
+    <!-- <ul class="nav nav-tabs">
+<li class="nav-item">
+  <a class="nav-link active" href="#">Active</a>
+</li>
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#">Link</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link disabled" href="#">Disabled</a>
+</li>
+</ul> -->
+
+    <!-- <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Navbar</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav> -->
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <a class="navbar-brand" href="#">
+            <h2 class="text-primary">Home <i class="fa fa-home" aria-hidden="true"></i>
+            </h2>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                <li class="nav-item active">
+                    <a class="nav-link text-danger" href="#">Products <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success" href="#">Sell</a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link disabled" href="#">5 STAR   </a>
+                </li>
+ 		<li class="nav-item">
+
+		 <div id="rotate" class="rotateSemi topSemi"></div>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@      NAVBAR END      @@@@@@@@@@@@@@@@@@@@@@-->
+
+
+    <!--  $$$$$$$$$$$$$$$$$$$$$$$    START MAIN SLIDER       $$$$$$$$$$$$$$$$$$$$$$$-->
+    <div class="mainSlider">
+        <div id="owl-demo" class="owl-carousel owl-theme">
+            <!-- <div class="row ">
+             <h3 class="col-lg-2 col-md-2 leftSlider">One Slide <button>see more</button></h3>
+            <div class="col-lg-10 col-md-10"><img src="1.jpg" alt="The Last of us"></div>
+
+          </div>
+          <div class="row ">
+             <h3 class="col-lg-2 leftSlider">One Slide <button>see more</button></h3>
+            <div class="col-lg-10"><img src="2.jpg" alt="The Last of us"></div>
+
+          </div>
+          <div class="row ">
+             <h3 class="col-lg-2 leftSlider">One Slide <button>see more</button></h3>
+            <div class="col-lg-10"><img src="3.jpg" alt="The Last of us"></div>
+
+          </div> -->
+            <img src="mainPlanter/1.jpg" alt="The Last of us">
+            <img src="mainPlanter/2.jpg" alt="The Last of us">
+            <img src="mainPlanter/3.jpg" alt="The Last of us">
+        </div>
+    </div>
+    <!--  $$$$$$$$$$$$$$$$$$$$$$$    End MAIN SLIDER       $$$$$$$$$$$$$$$$$$$$$$$-->
+
+    <!-- ###@@@@@@@@@@@~@@@@@@@@@@@@@@ Start PLANTER SLIDER @@@@@@@@@@@@@@@@@@@@### -->
+    <div id="plantersSlider">
+        <div class="row">
+
+            <div class="leftBoxSlider col col-lg-3 col-md-12 col-sm-12">
+                <h6 id="sentenceLeft" class="text-warning"> PLANTERS & BOWLS </h6>
+                <button class="btn btn-danger">See All</button>
+            </div>
+
+            <div class="col-lg-9 sliderInside col-md-12 col-sm-12">
+
+                <div class=" owl-carousel owl-theme container  ">
+
+                    <div class="item thumbnail">
+                        <p class="text-center text-success">Bell Latice</p>
+                        <a href="1.html"><img src="owlTypePlanter/images/1.jpg"></a>
+                        <h5 class="text-center text-danger">£10.99</h5>
+                    </div>
+                    <div class="item thumbnail">
+                        <p class="text-center text-success">Thimble Round</p>
+
+                        <a href="2.html"><img src="owlTypePlanter/images/2.jpg"></a>
+                        <h5 class="text-center text-danger">£12.25</h5>
+
+                    </div>
+
+                    <div class="item thumbnail">
+                        <p class="text-center text-success">Bell Quilt</p>
+
+                        <a href="3.html"><img src="owlTypePlanter/images/3.jpg"></a>
+                        <h5 class="text-center text-danger">£7.50</h5>
+
+                    </div>
+
+                    <div class="item thumbnail">
+                        <p class="text-center text-success">Stout Round</p>
+
+                        <a href="4.html"> <img src="owlTypePlanter/images/4.jpg"></a>
+                        <h5 class="text-center text-danger">£7.90</h5>
+
+                    </div>
+                    <div class="item thumbnail">
+                        <p class="text-center text-success">Wood Planter</p>
+
+                        <a href="5.html"><img src="owlTypePlanter/images/5.jpg"></a>
+                        <h5 class="text-center text-danger">£15.50</h5>
+
+                    </div>
+                    <div class="item thumbnail">
+                        <p class="text-center text-success">Stration Bowl</p>
+
+                        <a href="6.html"><img src="owlTypePlanter/images/6.jpg"></a>
+                        <h5 class="text-center text-danger">£6.50</h5>
+
+                    </div>
+                    <div class="item thumbnail">
+                        <p class="text-center text-success">Tall Taperd</p>
+
+                        <a href="7.html"> <img src="owlTypePlanter/images/7.jpg"></a>
+                        <h5 class="text-center text-danger">£10</h5>
+
+                    </div>
+                    <div class="item thumbnail">
+                        <p class="text-center text-success">Tall Square</p>
+
+                        <a href="8.html"><img src="owlTypePlanter/images/8.jpg"></a>
+                        <h5 class="text-center text-danger">£25.50</h5>
+
+                    </div>
+                    <div class="item thumbnail">
+                        <p class="text-center text-success">Infinty Square</p>
+
+                        <a href="9.html"> <img src="owlTypePlanter/images/9.jpg"></a>
+                        <h5 class="text-center text-danger">£15.50</h5>
+
+                    </div>
+                    <div class="item thumbnail">
+                        <p class="text-center text-success">Stoot Wood</p>
+
+                        <a href="10.html"> <img src="owlTypePlanter/images/10.jpg"></a>
+                        <h5 class="text-center text-danger">£12.90</h5>
+
+                    </div>
+                    <div class="item thumbnail">
+                        <p class="text-center text-success">Fleur De Lys</p>
+
+                        <a href="11.html"> <img src="owlTypePlanter/images/11.jpg"></a>
+                        <h5 class="text-center text-danger">£30</h5>
+
+                    </div>
+                    <div class="item thumbnail">
+                        <p class="text-center text-success">Pinecone</p>
+
+                        <a href="12.html"><img src="owlTypePlanter/images/12.jpg"></a>
+                        <h5 class="text-center text-danger">£6.99</h5>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ###@@@@@@@@@@@~@@@@@@@@@@@@@@ END PLANTER SLIDER @@@@@@@@@@@@@@@@@@@@### -->
+
+    <!-- ###@@@@@@@@@@@~@@@@@@@@@@@@@@ Start Cards SLIDER @@@@@@@@@@@@@@@@@@@@### -->
+    <div id="plantersCard">
+
+
+        <div class=" owl-carousel owl-theme container  ">
+
+            <div class="item thumbnail">
+                <a href="3.html"><img src="planterCards/images/8.jpg"></a>
+                <h5 class="text-center text-primary">13” BELL LATTICE PLANTER</h5>
+                <p class="text-center text-muted">A good sized, stout, Wood Grain finished planter</p>
+            </div>
+
+            <div class="item thumbnail">
+                <a href="3.html"><img src="planterCards/images/3.jpg"></a>
+                <h5 class="text-center text-primary">THIMBLE ROUND</h5>
+                <p class="text-center text-muted">A good sized, stout, Wood Grain finished planter</p>
+            </div>
+
+            <div class="item thumbnail">
+                <a href="3.html"><img src="planterCards/images/10.jpg"></a>
+                <h5 class="text-center  text-primary">11” BELL QUILT PLANTER</h5>
+                <p class="text-center text-muted">A good sized, stout, Wood Grain finished planter</p>
+            </div>
+
+            <div class="item thumbnail">
+                <a href="4.html"> <img src="planterCards/images/4.jpg"></a>
+                <h5 class="text-center text-primary">16” BELL QUILT PLANTER</h5>
+                <p class="text-center text-muted">A good sized, stout, Wood Grain finished planter</p>
+            </div>
+            <div class="item thumbnail">
+                <a href="5.html"><img src="planterCards/images/5.jpg"></a>
+                <h5 class="text-center text-primary">13” STOUT ROUND</h5>
+                <p class="text-center text-muted">A good sized, stout, Wood Grain finished planter</p>
+            </div>
+            <div class="item thumbnail">
+                <a href="6.html"><img src="planterCards/images/6.jpg"></a>
+                <h5 class="text-center text-primary">12” WOOD PLANTER</h5>
+                <p class="text-center text-muted">A good sized, stout, Wood Grain finished planter</p>
+            </div>
+            <div class="item thumbnail">
+                <a href="7.html"> <img src="planterCards/images/7.jpg"></a>
+                <h5 class="text-center text-primary">10”+12” STRIATION BOWL</h5>
+                <p class="text-center text-muted">A good sized, stout, Wood Grain finished planter</p>
+            </div>
+            <div class="item thumbnail">
+                <a href="8.html"><img src="planterCards/images/8.jpg"></a>
+                <h5 class="text-center text-primary">10” TALL TAPERED SQUARE</h5>
+                <p class="text-center text-muted">A good sized, stout, Wood Grain finished planter</p>
+            </div>
+            <div class="item thumbnail">
+                <a href="9.html"> <img src="planterCards/images/9.jpg"></a>
+                <h5 class="text-center text-primary">10.5” TALL SQUARE</h5>
+                <p class="text-center text-muted">A good sized, stout, Wood Grain finished planter</p>
+            </div>
+            <div class="item thumbnail">
+                <a href="10.html"> <img src="planterCards/images/10.jpg"></a>
+                <h5 class="text-center text-primary">16” INFINITY SQUARE</h5>
+                <p class="text-center text-muted">A good sized, stout, Wood Grain finished planter</p>
+            </div>
+            <div class="item thumbnail">
+                <a href="11.html"> <img src="planterCards/images/11.jpg"></a>
+                <h5 class="text-center text-primary">12.5” STOUT WOOD PLANTER</h5>
+                <p class="text-center text-muted">A good sized, stout, Wood Grain finished planter</p>
+            </div>
+            <div class="item thumbnail">
+                <a href="12.html"><img src="planterCards/images/12.jpg"></a>
+                <h5 class="text-center text-primary">12” FLEUR DE LYS PLANTER</h5>
+                <p class="text-center text-muted">A good sized, stout, Wood Grain finished planter</p>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- ###@@@@@@@@@@@~@@@@@@@@@@@@@@ END Cars SLIDER @@@@@@@@@@@@@@@@@@@@### -->
+    <script>
+        $(document).ready(function() {
+
+            //  $$$$$$$$$$$$$$$$$$$$$$$    START MAIN SLIDER       $$$$$$$$$$$$$$$$$$$$$$$-->
+
+            $(".mainSlider #owl-demo").owlCarousel({
+
+                navigation: true, // Show next and prev buttons
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                dots: false,
+                nav: true,
+                items: 1,
+                autoplay: true,
+                itemsDesktop: false,
+                itemsDesktopSmall: false,
+                autoPlayTimeout: 1000,
+                autoplayHoverPause: true,
+                loop: true,
+                itemsTablet: false,
+                navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+                itemsMobile: false
+
+            });
+            //  <!--  $$$$$$$$$$$$$$$$$$$$$$$    END MAIN SLIDER       $$$$$$$$$$$$$$$$$$$$$$$-->
+
+
+
+            //  <!--  $$$$$$$$$$$$$$$$$$$$$$$    Start Planter SLIDER       $$$$$$$$$$$$$$$$$$$$$$$-->
+
+            $('#plantersSlider .owl-carousel').owlCarousel({
+                loop: true,
+                // navigation: true,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+                autoPlay: 1000,
+                margin: 10,
+
+                responsive: {
+
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    450: {
+                        items: 2,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 4,
+                        nav: true,
+                        loop: false,
+                        margin: 20
+                    }
+                }
+            });
+            //  <!--  $$$$$$$$$$$$$$$$$$$$$$$    END   Planter SLIDER       $$$$$$$$$$$$$$$$$$$$$$$-->
+
+            //  <!--  $$$$$$$$$$$$$$$$$$$$$$$    Start   Planter Cars       $$$$$$$$$$$$$$$$$$$$$$$-->
+
+            $('#plantersCard .owl-carousel').owlCarousel({
+                loop: true,
+                // navigation: true,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+                autoPlay: 1000,
+                margin: 10,
+
+                responsive: {
+
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    450: {
+                        items: 2,
+                        nav: true
+                    },
+                    600: {
+                        items: 2,
+                        nav: false
+                    },
+                    1000: {
+                        items: 3,
+                        nav: true,
+                        loop: true,
+                        margin: 20
+                    }
+                }
+            });
+            //  <!--  $$$$$$$$$$$$$$$$$$$$$$$    End   Planter Cars       $$$$$$$$$$$$$$$$$$$$$$$-->
+
+
+        });
+    </script>
+    <!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <script src="mainPlanter/assets/vendors/highlight.js"></script>
+    <script src="mainPlanter/assets/js/app.js"></script>
+    <script src="mainPlanter/assets/js/js.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+</body>
+
+</html>
