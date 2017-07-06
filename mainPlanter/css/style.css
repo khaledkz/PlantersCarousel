@@ -12,6 +12,76 @@
 .item {
   margin-left: 20px;
 }*/
+
+/*.LookingGreat .img-responsive{
+  width: 100%!important;
+}*/
+.form-control{
+  width:310px!important;
+}
+.LookingGreat img{
+  width: 100%;
+  max-width: 70%;
+  height: auto;
+ }
+#BreezeThrough{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(213, 219, 216);
+}
+@media only screen and (max-width: 768px) {
+    /* tablets and desktop */
+  #BreezeThrough{
+    display: flex;
+    flex-direction: column;
+  }
+  #BreezeThrough img{
+    margin-top: 10px;
+  }
+  #BreezeThrough button{
+    margin-bottom: 10px;
+
+  }
+}
+@media only screen and (max-width: 558px) {
+    /* tablets and desktop */
+  #BreezeThrough h4{
+      font-size: 16px;
+      margin-top: 9px;
+    }
+  #BreezeThrough p{
+    font-size: 14px;
+
+  }
+
+}
+#BreezeThrough img{
+max-width: 100px;
+height: auto;
+}
+
+.LookingGreat{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.leftGreat{
+border: solid 1px rgb(212, 187, 198);
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.rightGreat{
+margin-left: -16px!important;
+}
+#mainNav button[type="submit"]{
+  /*display:none!important;*/
+  margin-left: 10px;
+}
 .mainSlider{
 margin-top:40px;
 margin-bottom:40px;
@@ -84,7 +154,7 @@ margin-bottom:40px;
  .mainSlider .sliderInside:hover {
     /*border:solid 0.0001px red;*/
 }
- 
+
 #rotate {
   background: rgb(73, 172, 145);
   display: inline-block;
@@ -118,6 +188,7 @@ margin-bottom:40px;
 @media screen and (max-width: 445px){
  }
 @media screen and (min-width: 446px){
+
  }
 @media screen and (min-width: 599.5px){
  }
